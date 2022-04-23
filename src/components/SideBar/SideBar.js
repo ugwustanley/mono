@@ -1,9 +1,12 @@
 import React from 'react'
+import UserProfileLink from '../UserProfileLink/UserProfileLink'
 import "./SideBar.scss"
 
 const SideBar = () => {
   return (
-    <div>SideBar</div>
+    <div className="sidebar">SideBar
+        <UserProfileLink />
+    </div>
   )
 }
 

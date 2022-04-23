@@ -1,0 +1,10 @@
+@import '../../styles/index.scss';
+
+.sidebar{
+    width:255px;
+    height:100vh;
+    background:$col-side-bar;
+    box-sizing: border-box;
+    padding-right: 1.5rem;
+    padding-left:1.2rem;
+}

@@ -1,0 +1,44 @@
+@import '../../styles/index.scss';
+// @import '@/styles/variables';
+// @import '@/styles/utils';
+
+.profile{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    background-color: $col-links;
+    border-radius: 10px;
+    color: #444;
+    padding:.8rem .7rem;
+    cursor: pointer;
+    &__image{
+        background-color: $col-profile;
+        width:2.2rem;
+        height:2.2rem;
+        font-weight: bold;
+        border-radius: 50%;
+        display:grid;
+        place-content: center;
+        color:#fff;
+    }
+    &__link{
+        color:#8c8fa3;
+    }
+    &__name{
+        // background:red;
+        width:60%;
+        text-align:left;
+        h3{
+            font-size:1rem;
+            font-weight: 500;
+        }
+        p{
+            font-size:.8rem;
+            margin-top:.3rem;
+            font-weight: 300;
+        }
+    }
+}
