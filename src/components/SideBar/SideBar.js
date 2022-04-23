@@ -16,7 +16,7 @@ import Audit from '../../mock/Audit'
 const SideBar = ({showSideBar , setShowSideBar}) => {
   return (
     <nav className={showSideBar? "sidebar":"sidebar sidebar__hide"}>
-        <div className="sidebar__x" onCLick={() => setShowSideBar(false)}>
+        <div className="sidebar__x" onClick={() => setShowSideBar(false)}>
             <X size={24} />
         </div>
         <UserProfileLink />
