@@ -1,10 +1,42 @@
 @import '../../styles/index.scss';
 
 .sidebar{
+    position:relative;
     width:255px;
     height:100vh;
     background:$col-side-bar;
     box-sizing: border-box;
     padding-right: 1.5rem;
     padding-left:1.2rem;
+    padding-top:1.3rem;
+
+    &__links{
+        margin-top:1.5rem;
+    }
+    &__connect{
+       font-size:.8rem;
+       font-weight:400;
+       text-align:left;
+       margin-left:1rem;
+       margin-top:1.2rem;
+    }
+    &__connects{
+        margin-top:.1rem;
+    }
+
+    &__audit{
+        position:absolute;
+        background:$col-side-bar;
+        width:calc(100% - 2.2rem);
+        bottom:0rem;
+        z-index:99;
+    }
+    &__audits{
+        margin-bottom:2rem;
+        font-weight:500;
+    }
+    hr{
+       color: rgba(209,214,222,1);
+       background-color: rgba(209,214,222,1);;
+    }
 }

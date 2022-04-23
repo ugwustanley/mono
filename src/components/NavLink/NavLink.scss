@@ -1,0 +1,23 @@
+@import '../../styles/index.scss';
+
+.navlink{
+    display:flex;
+    align-items:center;
+    justify-content:flex-right;
+    
+    margin-top:.1rem;
+    padding:.5rem 1rem;
+    border-radius: 10px;
+   
+
+    & figure{
+      margin:0;
+    }
+    p{
+        margin-left:.9rem;
+        font-size:1.05rem;
+    }
+    &:hover{
+        background-color: $col-links;
+    }
+}
