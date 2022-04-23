@@ -30,7 +30,7 @@ const SideBar = () => {
         </div>
 
        <div className="sidebar__audit">
-          <hr />
+           <div className="sidebar__hr"></div>
             <div className="sidebar__links sidebar__audits">
                 {Audit.map((item, index) => 
                     <NavLink key={index} name={item.name} url={item.url} icon={item.icon} />

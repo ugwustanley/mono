@@ -1,0 +1,22 @@
+.support__container{
+    position:absolute;
+    bottom:1.5rem;
+    right:1rem;
+}
+.support {
+    background:#050929;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:.6rem 1.2rem;
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    cursor:pointer;
+    p{
+        margin-left:.4rem;
+        font-size:.9rem;
+        font-weight:500;
+    }
+   
+}
