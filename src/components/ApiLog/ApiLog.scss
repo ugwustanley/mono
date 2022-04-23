@@ -35,8 +35,9 @@
     }
     &__status{
         @media (max-width: 600px) {
-            margin-left:auto !important; 
-            text-align:right !important;
+            //background:red;
+            width:auto;
+            min-width:auto;
         }
     }
 }
