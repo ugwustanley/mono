@@ -8,9 +8,12 @@
     @media (max-width: 800px) {
         padding:0 1rem;
         overflow-x: scroll;
-        height:auto;
+        height:inherit;
         overflow-y: visible;
         width:inherit; 
+        
+       
+        
     }
     
     @media (max-width: 600px){
