@@ -42,3 +42,11 @@
        background-color: rgba(209, 214, 222, 0.747);;
     }
 }
+
+@media (max-width: 800px){
+    .sidebar{
+        position:fixed;
+        left:0;
+        top:0;
+    }
+}

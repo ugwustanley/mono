@@ -1,9 +1,13 @@
 import React from 'react'
+import {WarningCircle} from 'phosphor-react'
 import './FailedButton.scss'
 
 const FailedButton = () => {
   return (
-    <div>FailedButton</div>
+    <button className="failedbutton">
+        <p>Failed</p>
+        <WarningCircle size={15} />
+    </button>
   )
 }
 

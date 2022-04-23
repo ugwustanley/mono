@@ -1,5 +1,30 @@
 
 
 .apilog{
-    
+    // display:grid;
+    // grid-template-columns: repeat(5, 1fr);
+    display:flex;
+    justify-content:space-between;
+    height:60px;
+    align-items:center;
+    border-bottom:1px solid rgba(209,214,222,1);
+
+    &__item{
+        display:block;
+        margin-right:auto;
+        width:100%;
+        font-size:.9rem;
+        // justify-self: space-around;
+        // align-self: flex-end;
+        text-align:left !important;
+       
+        // margin-top:300px;
+    }
+    &__scope{
+        font-weight:500;
+    }
+    &__heading{
+        color:gray;
+        font-weight: 400 !important;
+    }
 }

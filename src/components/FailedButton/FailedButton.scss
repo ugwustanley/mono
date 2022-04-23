@@ -1,3 +1,11 @@
 .failedbutton {
-    color:#ff3721;
+    background:#ff3721;
+    display:flex;
+    padding:.4rem .4rem;
+    border-radius:.3rem;
+    color:#fff;
+    cursor:pointer;
+    p{
+        margin-right:.3rem;
+    }
 }
