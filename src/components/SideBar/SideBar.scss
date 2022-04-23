@@ -9,6 +9,24 @@
     padding-right: 1.5rem;
     padding-left:1.2rem;
     padding-top:1.3rem;
+    @media (max-width: 800px){
+        
+            position:fixed;
+            left:0;
+            top:0;
+            z-index: 98;
+        
+    }
+    &__x{
+        display:none;
+        position:absolute;
+        top:1.5rem;
+        right:-3rem;
+        cursor:pointer;
+        @media (max-width: 800px) {
+            display:block;
+        }
+    }
 
     &__links{
         margin-top:1.5rem;
@@ -43,11 +61,7 @@
     }
 }
 
-@media (max-width: 800px){
-    .sidebar{
-        position:fixed;
-        left:0;
-        top:0;
-        z-index: 98;
-    }
+.sidebar__hide{
+    left:-305px;
 }
+

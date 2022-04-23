@@ -1,4 +1,5 @@
 import React from 'react'
+import {X} from 'phosphor-react'
 //stylesheet
 import "./SideBar.scss"
 
@@ -12,9 +13,12 @@ import NavItems from '../../mock/NavItems'
 import ConnectItems from '../../mock/ConnectItems'
 import Audit from '../../mock/Audit'
 
-const SideBar = () => {
+const SideBar = ({showSideBar , setShowSideBar}) => {
   return (
-    <nav className="sidebar">
+    <nav className={showSideBar? "sidebar":"sidebar sidebar__hide"}>
+        <div className="sidebar__x" onCLick={() => setShowSideBar(false)}>
+            <X size={24} />
+        </div>
         <UserProfileLink />
         <div className="sidebar__links">
             {NavItems.map((item, index) => 
