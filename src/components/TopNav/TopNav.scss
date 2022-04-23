@@ -9,13 +9,26 @@
     height:75px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    @media (max-width: 800px) {
+        display:block;
+        height:auto;
+        min-height:75px;
+        padding-left:1rem;
+        
+    }
    
     &__title{
         font-weight:500;
+        @media (max-width: 800px) {
+            margin-right:auto;
+            text-align:left;
+            
+        }
         span{
             color:rgb(221, 218, 218);
             transform:scale(1.4);
         }
+       
     }
     &__filter , &__select{
         display:flex;
@@ -25,10 +38,15 @@
         box-shadow: 0px 2px 3px 0px #dfdede;
         padding:.4rem 1rem;
         border-radius:5px;
-        margin-left:1rem;
+        margin-left:.8rem;
         color:rgba(85,88,111,1);
         background:#fff;
         cursor:pointer;
+        @media (max-width: 800px) {
+            margin-left:0;
+            margin-right:.8rem;
+            
+        }
         &:hover{
             background:inherit;
             box-shadow:none;
@@ -46,6 +64,11 @@
     }
     &__options{
         display:flex;
-        
+        @media (max-width: 800px) {
+            margin-right:auto;
+            text-align:left;
+            margin-top:.7rem;
+            
+        }
     }
 }

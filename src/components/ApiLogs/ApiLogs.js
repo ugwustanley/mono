@@ -18,7 +18,8 @@ const LogsHeading =
 const ApiLogs = () => {
   return (
     <div className="apilogs">
-           <ApiLog log={LogsHeading} isHeading="true" />
+        
+        <ApiLog log={LogsHeading} isHeading="true" />
         {Logs.map((log, index) => {
             return (
                 <ApiLog key={index} log={log} isHeading="false" />

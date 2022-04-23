@@ -4,6 +4,13 @@
   overflow-y:hidden;
 }
 
+@media (max-width: 800px){
+  .App{
+      overflow-y:visible;
+      
+  }
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

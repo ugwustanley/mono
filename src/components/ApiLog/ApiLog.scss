@@ -8,23 +8,35 @@
     height:60px;
     align-items:center;
     border-bottom:1px solid rgba(209,214,222,1);
-
+    @media(max-width:600px){
+        width:fit-content;
+        overflow:visible;
+    }
+   
     &__item{
         display:block;
         margin-right:auto;
         width:100%;
         font-size:.9rem;
-        // justify-self: space-around;
-        // align-self: flex-end;
         text-align:left !important;
-       
+        margin-right:1rem;  
+        min-width:80px;  
         // margin-top:300px;
     }
     &__scope{
         font-weight:500;
     }
+    &__when , &__endpoint{
+        min-width:100px;
+    }
     &__heading{
         color:gray;
         font-weight: 400 !important;
+    }
+    &__status{
+        @media (max-width: 600px) {
+            margin-left:auto !important; 
+            text-align:right !important;
+        }
     }
 }

@@ -6,6 +6,7 @@ import SuccessButton from '../SuccessButton/SuccessButton'
 
 const ApiLog = ({log , isHeading}) => {
   return (
+      <>
     <div className={isHeading == "true"? "apilog  apilog__heading": "apilog"}>
         <div className="apilog__endpoint apilog__item">
            {log?.endpoint}
@@ -19,7 +20,7 @@ const ApiLog = ({log , isHeading}) => {
            {log?.cost}
         </div>
 
-        <div className="apilog__When apilog__item">
+        <div className="apilog__when apilog__item">
             {log?.when}
         </div>
 
@@ -28,6 +29,8 @@ const ApiLog = ({log , isHeading}) => {
           {/* {log?.success? <SuccessButton /> : <FailedButton /> }   */}
         </div>
     </div>
+    <div className="apilog__line"></div>
+    </>
   )
 }
 

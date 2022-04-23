@@ -1,7 +1,25 @@
 .apilogs{
-    padding:0 2rem;
+    width:100%;
     height:calc(100vh - 150px);
-    overflow-y: scroll;
+    overflow:hidden;
+    padding:0 2rem;
+    width:100%;
+    overflow-y: scroll;  
+    //background:blue;
+}
 
-   
+
+@media (max-width: 800px){
+    .apilogs{
+        overflow-x: scroll;
+        height:auto;
+        overflow-y: visible;
+        width:inherit; 
+    }
+}
+
+@media (max-width: 600px){
+    .apilogs{   
+        margin-right:1rem;    
+    }
 }
