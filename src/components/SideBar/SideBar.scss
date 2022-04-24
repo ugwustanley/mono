@@ -51,6 +51,9 @@
         width:calc(100% - 2.2rem);
         bottom:0rem;
         z-index:99;
+        @media (max-width: 800px) {
+            background:#fff;
+        }
     }
     &__audits{
         margin-bottom:2rem;
