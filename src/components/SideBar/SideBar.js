@@ -17,7 +17,7 @@ const SideBar = ({showSideBar , setShowSideBar}) => {
   return (
     <nav className={showSideBar? "sidebar":"sidebar sidebar__hide"}>
         <div className="sidebar__x" onClick={() => setShowSideBar(false)}>
-            <X size={24} />
+            <X size={24} color="#fff" />
         </div>
         <UserProfileLink />
         <div className="sidebar__links">

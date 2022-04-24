@@ -16,8 +16,9 @@
             top:0;
             z-index: 98;
             transition:all .4s ease-in-out;
-
-        
+            background:#fff;  
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
     }
     &__x{
         display:none;
